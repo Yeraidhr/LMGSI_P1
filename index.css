@@ -1,0 +1,124 @@
+/* Estilos base para un documento HTML de prueba */
+:root {
+	color-scheme: light;
+	font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+	color: #243042;
+	background: #f4f7fb;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 2rem;
+	line-height: 1.6;
+	background: #fff;
+}
+
+header,
+footer {
+	padding: 1.5rem;
+	color: #fff;
+	background: #2563eb;
+	border-radius: 0.75rem;
+}
+
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin-top: 1rem;
+}
+
+nav a,
+a {
+	color: #1d4ed8;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+header a {
+	color: #fff;
+}
+
+a:hover,
+a:focus-visible {
+	text-decoration: underline;
+}
+
+main {
+	padding: 2rem 0;
+}
+
+h1,
+h2,
+h3 {
+	line-height: 1.2;
+	color: #172554;
+}
+
+section,
+article,
+aside {
+	margin-bottom: 1.5rem;
+	padding: 1.5rem;
+	background: #f8fafc;
+	border: 1px solid #dbe4f0;
+	border-radius: 0.75rem;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 0.5rem;
+}
+
+button,
+input,
+textarea,
+select {
+	width: 100%;
+	max-width: 32rem;
+	margin: 0.35rem 0 1rem;
+	padding: 0.7rem 0.85rem;
+	font: inherit;
+	border: 1px solid #b8c4d6;
+	border-radius: 0.4rem;
+}
+
+button {
+	width: auto;
+	color: #fff;
+	background: #2563eb;
+	border: 0;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #1d4ed8;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th,
+td {
+	padding: 0.75rem;
+	text-align: left;
+	border-bottom: 1px solid #dbe4f0;
+}
+
+@media (max-width: 600px) {
+	body {
+		padding: 1rem;
+	}
+
+	main {
+		padding: 1rem 0;
+	}
+}
