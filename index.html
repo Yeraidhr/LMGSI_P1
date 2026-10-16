@@ -1,57 +1,121 @@
+
 <!DOCTYPE html>
 <html lang="ca">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>TMDB - Inici</title>
 </head>
 
 <body>
-  
-<div class="logo">
-    <a href="https://www.themoviedb.org/?language=ca">
-        <img
-            src="C:/Users/Yerai/Desktop/DAW/Llenguatge_de_marques/imatges/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg"
-            height="25"
-        >
-    </a>
-</div>
-<ul>
-<li><a href = "Buscador.html">Buscador</a></li>
-<li><a href = "Contacte.html">Contacte</a></li>
-</ul>
-    </nav>
 
-<section>
-<h1>BUSCAR una pel·lícula</h1>
-<p>Milions de tíols,un sol cercador</p>
-<div>
-<input type ="text" placeholder="Cercar una pel·lícula"><button>Cercar</button>
-</div>
-</section>
-<main>
-<section>
-    <h2>Resultats</h2>
-<article>
-<img src="https://m.media-amazon.com/images/M/MV5BZDcwNDczMmMtOTg2Mi00MDBhLTlmYjItNzkxMDc2ODBiOTMzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Portada de la pel·lícula" height="200">
-    <h3><strong>Supersalidos</strong></h3>
-    <p>Tres nois que són amics des de la infància decideixen buscar noves aventures abans de la seva separació per la marxa a diferents universitats. Durant aquest nou trajecte s'han d'enfrontar a situacions còmiques pròpies de la vida d'un adolescent, com per exemple els problemes relacionats amb l'amor, el sexe, l'ús i l'abús de l'alcohol, l'escola, etc.</p>
-</article>
-<article>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYBWPkRZuL0Qq9J6JPb3bM6M5_0In_vEfI41REx8GD7Iwn-JomrCW4dl8&s=10" height="200">
-    <h3><strong>Dos colgaos muy fumaos</strong></h3>
-    <p>El banquer d'inversions Harold Lee és coaccionat pels seus col·legues perquè faci la seva feina mentre ells surten de festa. El seu amic, Kumar Patel, assisteix a una entrevista per a la facultat de medicina, però la frustra intencionadament per evitar ser acceptat.</p>
-</article>
-<article>
-    <img src="http://es.web.img3.acsta.net/pictures/18/09/18/16/30/4389164.jpg"height="200">
-    <h3><strong>Venom</strong></h3>
-    <p>Com a periodista, Eddie Brock (Tom Hardy) fa temps que intenta desemmascarar el creador de la Fundació Vida, el famós geni científic Carlton Drake (Riz Ahmed), una obsessió que ha arruïnat la seva carrera i la seva relació amb la seva nòvia, Anne (Michelle Williams). En investigar un dels experiments de Drake, l'ens alienígena Venom es fusiona amb el cos d'Eddie, i el reporter adquireix de sobte nous i increïbles superpoders, així com l'oportunitat de fer pràcticament el que li vingui de gust. Retorçat, fosc, impredictible i impulsat per la còlera, Venom obliga Eddie a lluitar per controlar unes habilitats summament perilloses que, alhora, també resulten embriagadores i el fan sentir poderós. Atès que Eddie i Venom es necessiten mútuament per aconseguir el que volen, es van barrejant cada cop més... On acaba Eddie i comença Venom?</p>
-</article>
-</section>
+    <header>
+        <div class="logo">
+            <a href="https://www.themoviedb.org/?language=ca">
+                <img
+                    src="https://www.themoviedb.org/assets/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg"
+                    alt="Logotip de TMDB"
+                    height="25">
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="Buscador.html">Buscador</a></li>
+                <li><a href="Contacte.html">Contacte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>BUSCAR una pel·lícula</h1>
+            <p>Milions de títols, un sol cercador</p>
+
+            <div>
+                <form method="get"
+                      action="https://www.themoviedb.org/search">
+                    <input
+                        type="search"
+                        name="query"
+                        placeholder="Cercar una pel·lícula">
+                    <button type="submit">Cercar</button>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <h2>Resultats</h2>
+
+            <article>
+                <img
+                    src="https://m.media-amazon.com/images/M/MV5BZDcwNDczMmMtOTg2Mi00MDBhLTlmYjItNzkxMDc2ODBiOTMzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+                    alt="Portada de Supersalidos"
+                    height="200">
+
+                <h3>Supersalidos</h3>
+                <p>
+                    Tres nois que són amics des de la infància decideixen
+                    buscar noves aventures abans de la seva separació per
+                    la marxa a diferents universitats. Durant aquest nou
+                    trajecte s'han d'enfrontar a situacions còmiques
+                    pròpies de la vida d'un adolescent, com per exemple
+                    els problemes relacionats amb l'amor, el sexe, l'ús
+                    i l'abús de l'alcohol, l'escola, etc.
+                </p>
+            </article>
+
+            <article>
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYBWPkRZuL0Qq9J6JPb3bM6M5_0In_vEfI41REx8GD7Iwn-JomrCW4dl8&s=10"
+                    alt="Portada de Dos colgaos muy fumaos"
+                    height="200">
+
+                <h3>Dos colgaos muy fumaos</h3>
+                <p>
+                    El banquer d'inversions Harold Lee és coaccionat
+                    pels seus col·legues perquè faci la seva feina
+                    mentre ells surten de festa. El seu amic, Kumar
+                    Patel, assisteix a una entrevista per a la facultat
+                    de medicina, però la frustra intencionadament per
+                    evitar ser acceptat.
+                </p>
+            </article>
+
+            <article>
+                <img
+                    src="https://es.web.img3.acsta.net/pictures/18/09/18/16/30/4389164.jpg"
+                    alt="Portada de Venom"
+                    height="200">
+
+                <h3>Venom</h3>
+                <p>
+                    Com a periodista, Eddie Brock (Tom Hardy) fa temps
+                    que intenta desemmascarar el creador de la Fundació
+                    Vida, el famós geni científic Carlton Drake
+                    (Riz Ahmed), una obsessió que ha arruïnat la seva
+                    carrera i la seva relació amb la seva nòvia, Anne
+                    (Michelle Williams). En investigar un dels
+                    experiments de Drake, l'ens alienígena Venom es
+                    fusiona amb el cos d'Eddie, i el reporter adquireix
+                    de sobte nous i increïbles superpoders, així com
+                    l'oportunitat de fer pràcticament el que li vingui
+                    de gust. Retorçat, fosc, impredictible i impulsat
+                    per la còlera, Venom obliga Eddie a lluitar per
+                    controlar unes habilitats summament perilloses
+                    que, alhora, també resulten embriagadores i el fan
+                    sentir poderós. Eddie i Venom es necessiten
+                    mútuament per aconseguir el que volen.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 TMDB. Tots els drets reservats.</p>
+    </footer>
+
 </body>
-<footer>
-    <p>© 2024 TMDB. Tots els drets reservats.</p>
-</footer>
 </html>
+
